@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczna Strona</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f0;
+            color: #003300;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #008000;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .countdown {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #ff0000;
+            background-color: #fff;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        .countdown p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #003300;
+        }
+        .footer {
+            background-color: #008000;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            position: fixed;
+            top: -10px;
+            z-index: 9999;
+            user-select: none;
+            pointer-events: none;
+        }
+        .game-container {
+            margin: 20px 0;
+        }
+        .mikołaj {
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Witaj na Świątecznej Stronie!</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=lP-5dl0V330" target="_blank">Kolędy</a></li>
+        <li><a href="https://www.gry.pl/gry/swieta" target="_blank">Gry</a></li>
+        <li><a href="https://www.kwestiasmaku.com/przepisy/uroczysty-obiad" target="_blank">Przepisy</a></li>
+        <li><a href="https://www.youtube.com/watch?v=lP-5dl0V330" target="_blank">Playlista</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <div class="countdown" id="countdown">
+        <!-- Licznik zostanie wypełniony przez JavaScript -->
+    </div>
+
+    <section id="kolędy">
+        <h2>Kolędy</h2>
+        <p>Cicha noc, święta noc,
+Pokój niesie ludziom wszem,
+A u żłóbka Matka Święta
+Czuwa sama uśmiechnięta
+Nad dzieciątka snem,
+Nad dzieciątka snem.
+
+Cicha noc, święta noc,
+Pastuszkowie u swych trzód
+Biegną wielce zadziwieni
+Za anielskim głosem pieni
+Gdzie się spełnił cud,
+Gdzie się spełnił cud.
+
+Cicha noc, święta noc,
+Narodzony Boży Syn
+Pan Wielkiego majestatu
+Niesie dziś całemu światu
+Odkupienie win,
+Odkupienie win.</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria Zdjęć</h2>
+        <!-- Zdjęcia świąteczne -->
+    </section>
+
+    <section id="gry">
+        <h2>Gry Świąteczne</h2>
+        <div class="game-container">
+            <img src="mikolaj.png" alt="Mikołaj" class="mikołaj" onclick="alert('Znalazłeś Mikołaja!')">
+            <!-- Dodaj więcej obrazków dla gry -->
+        </div>
+    </section>
+
+    <section id="przepisy">
+        <h2>Przepisy Świąteczne na bimber</h2>
+        Poniżej znajdują się przepisy wymyślone przeze przez bimber-nautów lub pochodzące z innych źrówdeł. Wszystkie polegają na "kiszeniu" wódki z innymi aromatyzującymi składnikami. Wódka nabiera nie tylko ładnego zapachu i smaku ale i koloru.
+
+1. Przepis z Miodem :
+Na jedną flaszkę (0,5 l) pięćdziesięcio procentowego bimbru wystarczy jedna mała "czubata" łyżeczka miodu. Miód przed dodaniem należy dobrze rozpuścić. Można zrobić to w małym garnku dodając do miodu trochę wody lub gotować wodę i po zagotowaniu zalać nią miód np. w szklance. Roztopiony miód dodajemy do bimbru i dobrze mieszamy do całkowitego rozpuszczenia. Dzięki temu zabiegowi nasz eliksir nabiera ładnego koloru i lepszego smaku, po prostu 'miodzio'. Po około tygodniu naprawdę czuć dużą różnicę w smaku naszej wódy.
+
+2. Przepis z Karmelem tzw. Przepalanka:
+
+UWAGA - robienie karmelu może być niebezpieczne!
+Na litr bimbru wystarczą dwie stołowe łyżki cukru. Cukier wsypujemy na patelnię i podgrzewamy tak długo aż się całkowicie roztopi, można roztapiać go z odrobiną wody.
+Od momentu roztopienia się cukru nie można go pozostawić bez obserwacji - trzeba pilnować!
+
+Następnie, po ostudzeniu wlewamy to do wódy i postępujemy tak jak w przypadku miodu. Mieszamy , czekamy , pijemy:). Bimber nabierze pięknego koloru i poprawi się jego smak. Im więcej damy cukru tym kolor będzie bardziej jaskrawy, niemal czerwony.
+
+    </section>
+</div>
+
+<footer class="footer">
+    <p>Kontakt: Jakubkalita@onet.pl</p>
+</footer>
+
+<script>
+    function updateCountdown() {
+        const christmas = new Date('December 25, 2023 00:00:00').getTime();
+        const now = new Date().getTime();
+        const diff = christmas - now;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        const countdownHTML = `
+            <p>${days} dni</p>
+            <p>${hours} godzin</p>
+            <p>${minutes} minut</p>
+            <p>${seconds} sekund</p>
+            <p>do Świąt Bożego Narodzenia!</p>
+        `;
+
+        document.getElementById('countdown').innerHTML = countdownHTML;
+    }
+
+    setInterval(updateCountdown, 1000);
+
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.textContent = '❄';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
+        snowflake.style.opacity = Math.random();
+        snowflake.style.fontSize = Math.random() * 20 + 10 + 'px';
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+            snowflake.remove();
+        }, 5000);
+    }
+
+    setInterval(createSnowflake, 100);
+</script>
+
+</body>
+</html>
